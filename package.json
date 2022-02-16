@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "webpackDev": " webpack-dev-server ",
-    "build": "npm-run-all -s generate webpackBuild ",
+    "buildout": "npm-run-all -s generate webpackBuild ",
     "dev": " npm-run-all -s generate webpackDev ",
     "generate": "babel-node --presets=@babel/preset-react,@babel/preset-env generateHtml.js",
     "webpackBuild": "webpack",
