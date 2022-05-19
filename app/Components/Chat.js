@@ -23,8 +23,7 @@ function Chat() {
   }, [appState.isChatOpen]);
   useEffect(() => {
     socket.current = io(
-      process.env.BACKENDURL ||
-        "https://backendformyfirstreactapp18.herokuapp.com"
+      process.env.BACKENDURL || "https://my-react-app-backend.herokuapp.com"
     );
     socket.current.on("chatFromServer", (message) => {
       setState((draft) => {

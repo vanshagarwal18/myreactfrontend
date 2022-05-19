@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import Axios from "axios";
 Axios.defaults.baseURL =
-  process.env.BACKENDURL || "https://backendformyfirstreactapp18.herokuapp.com";
+  process.env.BACKENDURL || "https://my-react-app-backend.herokuapp.com";
 
 //Context
 import StateContext from "./StateContext";
